@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Library</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="top-bar">
+    <h1>University</h1>
+
+    <div class="menu-toggle" onclick="toggleMenu()">
+      ☰
+    </div>
+
+    <input type="text" id="search" placeholder="Search..." onkeyup="searchRedirect(event)">
+  </div>
+
+  <nav id="navMenu">
+    <a href="index.html">Home</a>
+    <a href="prospective.html">Prospective Students</a>
+    <a href="student-dashboard.html">Current Students</a>
+    <a href="faculty.html">Faculty & Staff</a>
+    <a href="academics.html">Academics</a>
+    <a href="library.html">Library</a>
+    <a href="directory.html">Directory</a>
+    <a href="news.html">News & Events</a>
+    <a href="about.html">About</a>
+  </nav>
+</header>
+
+<div class="breadcrumb">
+  Home > Library
+</div>
+
+<section class="content">
+  <h2>Library Search</h2>
+  <p>Search our collection of books, journals, and digital resources.</p>
+  <!-- SEARCH -->
+  <input type="text" id="librarySearch" placeholder="Search books..." onkeyup="searchLibrary()">
+
+  <!-- FILTER -->
+  <select id="filter" onchange="searchLibrary()">
+    <option value="all">All</option>
+    <option value="book">Books</option>
+    <option value="article">Articles</option>
+  </select>
+
+  <!-- RESULTS -->
+
+  <h3>Popular Resources</h3>
+  
+</section>
+  <div id="libraryResults"></div>
+
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>

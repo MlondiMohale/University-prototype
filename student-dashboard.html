@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="top-bar">
+    <h1>University</h1>
+
+    <div class="menu-toggle" onclick="toggleMenu()">
+      ☰
+    </div>
+
+    <input type="text" id="search" placeholder="Search..." onkeyup="searchRedirect(event)">
+  </div>
+
+  <nav id="navMenu">
+    <a href="index.html">Home</a>
+    <a href="prospective.html">Prospective Students</a>
+    <a href="student-dashboard.html">Current Students</a>
+    <a href="faculty.html">Faculty & Staff</a>
+    <a href="academics.html">Academics</a>
+    <a href="library.html">Library</a>
+    <a href="directory.html">Directory</a>
+    <a href="news.html">News & Events</a>
+    <a href="about.html">About</a>
+  </nav>
+</header>
+
+<div class="breadcrumb">
+  Home > Current Students
+</div>
+
+<div class="dashboard">
+
+  <aside class="sidebar">
+    <h3>Academics</h3>
+    <p>Registration</p>
+    <p>Course Catalog</p>
+
+    <h3>Student Services</h3>
+    <p>Financial Aid</p>
+
+    <h3>Quick Links</h3>
+    <p>Pay Fees</p>
+  </aside>
+
+<main>
+  <h2>Welcome!</h2>
+
+  <div class="dashboard-cards">
+    <div class="card">Courses: 3</div>
+    <div class="card">Balance: E 5000</div>
+    <div class="card">Semester: Fall 2026</div>
+  </div>
+
+  <h3>Current Courses</h3>
+  <ul>
+    <li>CS101 - Introduction to Programming</li>
+    <li>MATH201 - Calculus II</li>
+    <li>IS202 - Information Systems</li>
+  </ul>
+
+  <h3>Announcements</h3>
+  <p>Registration deadline: 30 September</p>
+
+  <h3>Quick Actions</h3>
+  <button onclick="location.href='registration.html'">Register</button>
+  <button onclick="location.href='payment.html'">Pay Fees</button>
+ 
+</main>
+
+</div>
+
+</body>
+</html>
