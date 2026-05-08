@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Program</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="top-bar">
+    <h1>University</h1>
+
+    <div class="menu-toggle" onclick="toggleMenu()">
+      ☰
+    </div>
+
+    <input type="text" id="search" placeholder="Search..." onkeyup="searchRedirect(event)">
+  </div>
+
+  <nav id="navMenu">
+    <a href="index.html">Home</a>
+    <a href="prospective.html">Prospective Students</a>
+    <a href="student-dashboard.html">Current Students</a>
+    <a href="faculty.html">Faculty & Staff</a>
+    <a href="academics.html">Academics</a>
+    <a href="library.html">Library</a>
+    <a href="directory.html">Directory</a>
+    <a href="news.html">News & Events</a>
+    <a href="about.html">About</a>
+  </nav>
+</header>
+
+<div class="breadcrumb">
+  Home > Academics > Programs
+</div>
+
+
+<section class="content">
+  <h2>Programs A–Z</h2>
+
+  <p>Explore our range of undergraduate programs.</p>
+
+  <div class="grid">
+
+    <!-- PROGRAM 1 -->
+    <div class="card" onclick="location.href='cs-program.html'">
+      <h3>BSc Computer Science</h3>
+      <p>Software development, AI, and data science.</p>
+    </div>
+
+    <!-- PROGRAM 2 -->
+    <div class="card" onclick="location.href='math-program.html'">
+      <h3>BSc Mathematics</h3>
+      <p>Pure and applied mathematics for analytical careers.</p>
+    </div>
+
+    <!-- PROGRAM 3 -->
+    <div class="card" onclick="location.href='business.html'">
+      <h3>Bachelor of Business Administration</h3>
+      <p>Management, finance, and entrepreneurship.</p>
+    </div>
+
+  </div>
+</section>
+
+</body>
+</html>

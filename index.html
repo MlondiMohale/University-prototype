@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Home</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="top-bar">
+    <h1>University</h1>
+
+    <div class="menu-toggle" onclick="toggleMenu()">
+      ☰
+    </div>
+
+    <input type="text" id="search" placeholder="Search..." onkeyup="searchRedirect(event)">
+  </div>
+
+  <nav id="navMenu">
+    <a href="home.html">Home</a>
+    <a href="prospective.html">Prospective Students</a>
+    <a href="student-dashboard.html">Current Students</a>
+    <a href="faculty.html">Faculty & Staff</a>
+    <a href="academics.html">Academics</a>
+    <a href="library.html">Library</a>
+    <a href="directory.html">Directory</a>
+    <a href="news.html">News & Events</a>
+    <a href="about.html">About</a>
+  </nav>
+</header>
+
+<div class="breadcrumb">Home</div>
+
+<section class="hero">
+  <h2>Welcome to Southern Africa University</h2>
+  <p>Empowering innovation, research, and leadership across Africa.</p>
+  <button onclick="location.href='prospective.html'">Apply Now</button>
+</section>
+
+<section class="content">
+  <div class="grid">
+    <div class="card">
+      <h3>🎓 12,000+ Students</h3>
+      <p>Diverse student community from across the region</p>
+    </div>
+
+    <div class="card">
+      <h3>50+ Programs</h3>
+      <p>Undergraduate and postgraduate degrees</p>
+    </div>
+
+    <div class="card">
+      <h3>Global Partnerships</h3>
+      <p>Collaborations with international universities</p>
+    </div>
+  </div>
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>
